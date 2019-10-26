@@ -75,7 +75,7 @@ img {
     width: 421px;
 }
 
-.odd {
+.first-column {
     margin-right: 59px;
 }
 
@@ -100,10 +100,11 @@ img {
 .article_text {
     font-family: "Playfair Display", serif;
     font-size: 14px;
+    line-height: 24px;
     color: rgb(98, 98, 98);
     text-align: left;
     margin-bottom: 135px;
-    line-height: 24px;
+    
 }
 
 .article_text_last {
@@ -111,10 +112,10 @@ img {
 }
 
 .button {
+    display: block;
     font-family: "Playfair Display", serif;
     font-size: 20px;
     color: rgb(98, 98, 98);
-    display: block;
     width: 164px;
     height: 60px;
     border-width: 1px;
