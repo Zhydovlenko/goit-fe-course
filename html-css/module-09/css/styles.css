@@ -261,7 +261,11 @@
     .partners__list-item:not(:last-child) {
       margin-bottom: 1.625rem;
     }
+
+    .partners__btn {
+      margin: 0 auto;
   }
+}
 
   @media (min-width: 768px) {
     .header {
