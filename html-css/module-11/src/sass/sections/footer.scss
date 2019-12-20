@@ -1,0 +1,45 @@
+.footer .container {
+  @include flex(flex, space-between, center);
+  flex-wrap: wrap;
+  border-top: 1px solid;
+  border-color: rgb(229, 229, 229);
+  padding: 0.6875rem 0;
+}
+
+.footer__content {
+  @include font($first-font, 14px, 500);
+  color: $third-color;
+}
+
+.footer__reference {
+  color: $first-color;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__form-email {
+  border: 1px solid;
+  border-color: rgb(231, 231, 231);
+  width: 14.3125rem;
+  height: 2.5rem;
+  @include font($second-font, 15px, 300);
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.footer__form-button {
+  display: block;
+  background-color: rgb(149, 225, 211);
+  width: 9.375rem;
+  height: 2.5rem;
+  border: 0;
+  @include font($first-font, 14px, 700);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+}

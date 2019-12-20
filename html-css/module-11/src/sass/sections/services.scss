@@ -1,0 +1,100 @@
+.services {
+  padding-top: 2.875rem;
+
+  &__container {
+    width: 1150px;
+  }
+  
+  &__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: space-around;
+    margin-bottom: 5.375rem;
+
+    &-item {
+      flex: 0 0 21.4375rem;
+  
+      &:nth-child(-n+3) {
+        margin-bottom: 5.75rem;
+      }
+      
+      &::before {
+        position: absolute;
+        top: auto;
+        left: auto;
+        display: block;
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      
+      &:first-child::before {
+        background-image: url("../images/services-icons/alarm.svg")
+      }
+      
+      &:nth-child(2)::before {
+        background-image: url("../images/services-icons/line-graph.svg");
+      }
+      
+      &:nth-child(3)::before {
+        background-image: url("../images/services-icons/computer-ok.svg");
+      }
+      
+      &:nth-child(4)::before {
+        background-image: url("../images/services-icons/book.svg");
+      }
+      
+      &:nth-last-child(2)::before {
+        background-image: url("../images/services-icons/home.svg");
+      }
+      
+      &:last-child::before {
+        background-image: url("../images/services-icons/image.svg");
+      }
+    }
+
+    &-title {
+      @include font($first-font, 14px, 500);
+      color: $third-color;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 3.8125rem;
+      margin-bottom: 0.875rem;
+    }
+    
+    &-text {
+      @include font($second-font, 15px, 400);
+      color: rgb(153, 153, 153);
+      line-height: 1.6;
+      text-align: left;
+      padding-left: 3.8125rem;
+    }
+  }
+}
+
+.section-title {
+  @include font($third-font, 24px, 400);
+  color: $third-color;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  @include font($first-font, 30px, 700);
+  color: $third-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.75rem;
+
+  &::after {
+    @extend %after;
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: $first-color;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
